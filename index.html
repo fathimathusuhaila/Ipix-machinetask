@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPIX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+</head>
+<body>
+    <div class="root">
+        <div class="formContainer">
+            <div class="formHeader">
+                <p>Register</p>
+            </div>
+            <div class="formBody">
+                <div class="InputBox">
+                    <div><label for="firstName">Name <span class="required">*</span></label></div>
+                    <div class="nameInputContainer">                   
+                        <div class="w-100">
+                            <input type="text" id="firstName" />
+                            <p>First</p>
+                            <div class="error-container"></div>
+                            
+                        </div>
+                        <div class="w-100">
+                            <input type="text" id="lastName" />
+                            <p>Last</p>
+                            <div class="error-container"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="InputBox">
+                    <div><label for="username">Username <span class="required">*</span></label></div>
+                    <div class="w-100">
+                        <input type="text" id="username" />
+                        <div class="error-container"></div>
+                    </div>
+                </div>
+                <div class="InputBox">
+                    <div><label for="email">Email <span class="required">*</span></label></div>
+                    <div class="w-100">
+                        <input type="email" id="email" />
+                        <div class="error-container"></div>
+                    </div>
+                </div>
+                <div class="InputBox phoneInput">
+                    <div><label for="telephone">Phone</label></div>
+                    <div class="w-100">
+                        <input type="tel" id="telephone" class="w-100"/>
+                        <div class="error-container"></div>
+                    </div>
+                </div>
+                <div class="InputBox">
+                    <div><label for="password">Password <span class="required">*</span></label></div>
+                    <div class="w-100">
+                        <input type="password" id="password" />
+                        <div class="error-container"></div>
+                    </div>
+                </div>
+                <div class="InputBox">
+                    <div><label for="bio">Short Bio</label></div>
+                    <div class="w-100">
+                        <textarea id="bio" rows="5"></textarea>
+                        <p>Share a little information about yourself</p>
+                        <div class="error-container"></div>
+                       
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const phoneInput = document.querySelector("#telephone");
+            window.intlTelInput(phoneInput, {
+                initialCountry: "in",
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+        });
+    </script>
+</body>
+</html>

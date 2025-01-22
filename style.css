@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.root {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.formContainer {
+    background: rgb(248, 244, 244);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 30%;
+}
+.nameInputContainer {
+    display: flex;
+    gap: 10px;
+}
+.nameInputContainer p {
+    font-size: 13px;
+    font-weight: 100;
+}
+.formHeader {
+    margin-bottom: 15px;
+}
+.formHeader p {
+    font-size: 25px;
+}
+p {
+    margin: 0px;
+}
+input {
+    border: 0.2px solid rgb(183, 179, 179);
+    height: 30px;
+    border-radius: 2px;
+    width: 100%;
+    outline: 0;
+}
+label {
+    color: rgb(61, 59, 59);
+    font-size: 14px;
+    font-weight: 700;
+}
+.required {
+    color: red;
+}
+.error-container {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+.InputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.InputBox p {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 0.2rem;
+}
+.formBody {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.w-100 {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    outline: 0;
+    border: 0.2px solid rgb(183, 179, 179);
+}
+button {
+    height: 40px;
+    padding: 10px 20px;
+    border: 0.2px solid rgb(183, 179, 179);
+}
+.phoneInput .iti {
+    width: 100%;
+}
+.error-container {
+    display: none
+}
+@media (max-width:800px) {
+    .formContainer {
+        width: 90%;
+    }
+}
