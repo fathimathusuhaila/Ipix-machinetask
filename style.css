@@ -14,7 +14,7 @@ body {
 }
 .nameInputContainer {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .nameInputContainer p {
     font-size: 13px;
@@ -53,7 +53,7 @@ label {
 .InputBox {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
 }
 .InputBox p {
     font-size: 12px;
